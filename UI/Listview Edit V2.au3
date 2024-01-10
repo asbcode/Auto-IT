@@ -107,7 +107,6 @@ EndFunc   ;==>EditListViewItemInGUI
 
 Func WM_NOTIFY($hWnd, $iMsg, $iwParam, $ilParam)
     Local $tNMHDR = DllStructCreate($tagNMHDR, $ilParam)
-
     Local $hwndFrom = DllStructGetData($tNMHDR, "hwndFrom")
     Local $idFrom = DllStructGetData($tNMHDR, "idFrom")
     Local $code = DllStructGetData($tNMHDR, "code")
